@@ -18,8 +18,8 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const easyimport = require('postcss-easy-import');
 
-const REPO = 'TryGhost/Source';
-const REPO_READONLY = 'TryGhost/Source';
+const REPO = 'slowtech-studio/Lovelace';
+const REPO_READONLY = 'slowtech-studio/Lovelace';
 const CHANGELOG_PATH = path.join(process.cwd(), '.', 'changelog.md');
 
 function serve(done) {
@@ -128,7 +128,7 @@ exports.release = async () => {
         const compatibleWithGhost = result.compatibleWithGhost;
 
         const releasesResponse = await releaseUtils.releases.get({
-            userAgent: 'Source',
+            userAgent: 'Lovelace',
             uri: `https://api.github.com/repos/${REPO_READONLY}/releases`
         });
 
@@ -158,7 +158,7 @@ exports.release = async () => {
             preRelease: false,
             tagName: 'v' + newVersion,
             releaseName: newVersion,
-            userAgent: 'Source',
+            userAgent: 'Lovelace',
             uri: `https://api.github.com/repos/${REPO}/releases`,
             github: {
                 token: githubToken

@@ -1,7 +1,7 @@
 {
-    "name": "source",
-    "description": "A default theme for the Ghost publishing platform",
-    "demo": "https://source.ghost.io",
+    "name": "lovelace",
+    "description": "The theme for slowtech.studio, forked from the official source theme",
+    "demo": "https://slow-tech.ghost.io",
     "version": "1.5.0",
     "engines": {
         "ghost": ">=5.0.0"
@@ -36,10 +36,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Source.git"
+        "url": "https://github.com/slowtech-studio/Lovelace.git"
     },
-    "bugs": "https://github.com/TryGhost/Source/issues",
-    "contributors": "https://github.com/TryGhost/Source/graphs/contributors",
+    "bugs": "https://github.com/slowtech-studio/Lovelace/issues",
+    "contributors": "https://github.com/slowtech-studio/Lovelace/graphs/contributors",
     "devDependencies": {
         "@tryghost/release-utils": "0.8.1",
         "autoprefixer": "10.4.7",
