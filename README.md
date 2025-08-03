@@ -1,6 +1,6 @@
-# Source
+# Lovelace
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Source! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Source/releases) page.
+Lovelace is a Ghost theme that is forked from [Source](https://github.com/TryGhost/Source), the default theme for [Ghost](http://github.com/TryGhost/Ghost/). Ada Lovelace was a Victorian-era mathematician who was widely considered to be the first computer programmer.
 
 &nbsp;
 
@@ -29,7 +29,7 @@ One neat trick is that you can also create custom one-off templates by adding th
 
 # Development
 
-Source styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+Lovelace styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
 ```bash
 # install dependencies
@@ -55,7 +55,7 @@ yarn zip
 
 # SVG Icons
 
-Source uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
+Lovelace uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
 
 You can add your own SVG icons in the same manner.
 
