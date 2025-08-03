@@ -2,7 +2,7 @@
     "name": "lovelace",
     "description": "The theme for slowtech.studio, forked from the official source theme",
     "demo": "https://slow-tech.ghost.io",
-    "version": "1.5.0",
+    "version": "1.0.0",
     "engines": {
         "ghost": ">=5.0.0"
     },
@@ -18,9 +18,9 @@
         "postship": "git fetch && gulp release"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org/"
+        "name": "Matthew Serrano",
+        "email": "matthew@slowtech.studio",
+        "url": "https://slow-tech.ghost.io"
     },
     "gpm": {
         "type": "theme",
@@ -36,16 +36,16 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/slowtech-studio/Lovelace.git"
+        "url": "https://github.com/slowtech-studio/Lovelace-theme.git"
     },
-    "bugs": "https://github.com/slowtech-studio/Lovelace/issues",
-    "contributors": "https://github.com/slowtech-studio/Lovelace/graphs/contributors",
+    "bugs": "https://github.com/slowtech-studio/Lovelace-theme/issues",
+    "contributors": "https://github.com/slowtech-studio/Lovelace-theme/graphs/contributors",
     "devDependencies": {
         "@tryghost/release-utils": "0.8.1",
         "autoprefixer": "10.4.7",
         "beeper": "2.1.0",
         "cssnano": "5.1.12",
-        "gscan": "4.49.1",
+        "gscan": "4.48.0",
         "gulp": "4.0.2",
         "gulp-concat": "2.6.1",
         "gulp-livereload": "4.0.2",
@@ -91,7 +91,7 @@
                     "Logo on the left",
                     "Stacked"
                 ],
-                "default": "Logo in the middle"
+                "default": "Logo on the left"
             },
             "site_background_color": {
                 "type": "color",
@@ -140,7 +140,7 @@
                     "Off"
                 ],
                 "description": "Landing is recommended for all sites, Highlight & Magazine for those with more content",
-                "default": "Landing",
+                "default": "Highlight",
                 "group": "homepage"
             },
             "header_text": {
@@ -158,7 +158,7 @@
             },
             "show_featured_posts": {
                 "type": "boolean",
-                "default": false,
+                "default": true,
                 "group": "homepage",
                 "visibility": "header_style:[Highlight, Magazine]"
             },
@@ -179,7 +179,7 @@
             },
             "show_author": {
                 "type": "boolean",
-                "default": true,
+                "default": false,
                 "group": "homepage"
             },
             "show_publish_date": {
@@ -206,6 +206,11 @@
                 "type": "boolean",
                 "default": true,
                 "group": "post"
+            },
+            "use_tag_accent_as_background_color": {
+                "type": "boolean",
+                "description": "Use tha tag accent color as the page background color",
+                "default": false
             }
         }
     },

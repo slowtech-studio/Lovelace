@@ -1,0 +1,20 @@
+{{!-- Background color --}}
+{{#if @custom.use_tag_accent_as_background_color}}
+    <style>
+    body {
+        background-color: {{#is "tag"}}{{accent_color}}{{else}}{{primary_tag.accent_color}}{{/is}};
+    }
+    {{#match accent_color "#000000"}}
+    .gh-main, .gh-card-link, .gh-footer {
+        color: var(--color-white);
+    }
+    {{/match}}
+
+    {{#match primary_tag.accent_color "#000000"}}
+    .gh-article-meta-content, .gh-main, .gh-card-link, .gh-container-inner, .gh-footer, a, time {
+        color: var(--color-white);
+    }
+    {{/match}}
+
+    </style>
+{{/if}}
