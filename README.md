@@ -63,6 +63,15 @@ You can add your own SVG icons in the same manner.
 
 This template includes a routes.yaml file that must be manually uploaded to the Ghost admin console (in the Labs section).
 
+# Theme Validation
+
+The `test` Gulp task runs the GScan tool to check for errors, deprecations and other compatibility issues with Ghost:
+
+```bash
+# run GScan
+yarn test
+```
+
 # Copyright & License
 
 Copyright (c) 2013-2025 Ghost Foundation - Released under the [MIT license](LICENSE).
