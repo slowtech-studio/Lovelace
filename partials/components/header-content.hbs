@@ -17,8 +17,39 @@
         {{#match headerStyle "Highlight"}}
             {{#if @site.description}}
                 <div class="gh-subheader-description">
-                    <marquee scrollamount="10"><h1>{{@site.description}}</h1></marquee>
+                    <h1 class="ml7">
+                    <span class="text-wrapper">
+                        <span class="letters">{{@site.description}}</span>
+                    </span>
+                    </h1>
                 </div>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+                <script>
+                    /* Script to animate sub-header taken from https://tobiasahlin.com/moving-letters/#7 */
+                    
+                    // Wrap every letter in a span
+                    var textWrapper = document.querySelector('.ml7 .letters');
+                    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                    anime.timeline()
+                    .add({
+                        targets: '.ml7 .letter',
+                        translateY: ["1.1em", 0],
+                        translateX: ["0.55em", 0],
+                        translateZ: 0,
+                        rotateZ: [180, 0],
+                        duration: 750,
+                        easing: "easeOutExpo",
+                        delay: (el, i) => 50 * i
+                    }).add({
+                        targets: '.ml7',
+                        duration: 1000,
+                        easing: "easeOutExpo",
+                        delay: 1000
+                    });
+                </script>
             {{/if}}
             <div class="gh-header-left">
                 {{#foreach posts limit="1"}}
