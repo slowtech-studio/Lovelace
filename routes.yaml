@@ -1,0 +1,18 @@
+routes:
+
+collections:
+  /:
+    permalink: /{slug}/
+    template: index
+  /provocations/:
+    permalink: /provocations/{slug}/
+    template: index
+    filter: primary_tag:Provocations
+  /events/:
+    permalink: /events/{slug}/
+    template: index
+    filter: primary_tag:Events
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
