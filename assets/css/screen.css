@@ -1187,6 +1187,11 @@ Search                         LOGO                    Login Subscribe
     gap: var(--grid-gap);
 }
 
+.gh-header.is-highlight .gh-subheader-description {
+    grid-column: 1 / span 16;
+    text-align: center;
+}
+
 .gh-header.is-highlight .gh-header-left {
     position: relative;
     grid-column: span 8;
