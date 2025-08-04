@@ -59,6 +59,9 @@ Lovelace uses inline SVG icons, included via Handlebars partials. You can find a
 
 You can add your own SVG icons in the same manner.
 
+# Dynamic Routing
+
+This template includes a routes.yaml file that must be manually uploaded to the Ghost admin console (in the Labs section).
 
 # Copyright & License
 
