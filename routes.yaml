@@ -15,6 +15,7 @@ collections:
   /about/staff/:
     permalink: /staff/
     template: staff
+    data: page.our-people
 
 taxonomies:
   tag: /tag/{slug}/

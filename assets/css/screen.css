@@ -3368,6 +3368,8 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
 
 .gh-card-wrapper.is-staff {
     flex: 1;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
     width: 50%;
 }
