@@ -12,6 +12,9 @@ collections:
     permalink: /events/{slug}/
     template: index
     filter: primary_tag:Events
+  /about/staff/:
+    permalink: /staff/
+    template: staff
 
 taxonomies:
   tag: /tag/{slug}/

@@ -44,6 +44,8 @@ production stylesheet in assets/built/screen.css
   21.2. Footer bar
   21.3. Footer signup
 22. Lightbox
+23. Routes
+  23.1 Staff
 
 */
 
@@ -3352,4 +3354,20 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
 
 .pswp--minimal--dark .pswp__top-bar {
     background: none;
+}
+
+/* 23. Routes
+/* ---------------------------------------------------------- */
+
+/* 23.1 Staff */
+
+.gh-container.is-staff {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.gh-card-wrapper.is-staff {
+    flex: 1;
+    width: 33.33%;
 }
