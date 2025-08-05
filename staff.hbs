@@ -15,9 +15,19 @@
                             {{#foreach authors}}
                                 <table class="gh-card-wrapper is-staff">
                                     <tbody>
-                                        <tr><td style="border: none"><a href="{{url}}"><img src="{{profile_image}}" width="300" height="300"></a></td></tr>
-                                        <tr><td style="border: none"><h2><a href="{{url}}">{{name}}</a></h3></td></tr>
-                                        <tr><td style="min-width: 300px"><p>{{bio}}</p></td></tr>
+                                        <tr>
+                                            <td style="border: none"><a href="{{url}}"><img src="{{profile_image}}" width="300" height="300"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border: none">
+                                                <h2><a href="{{url}}">{{name}}</a></h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="min-width: 300px">
+                                                <p>{{bio}}</p>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             {{/foreach}}
@@ -26,5 +36,4 @@
                 </section>
             </article>
     </section>
-
 </main>
