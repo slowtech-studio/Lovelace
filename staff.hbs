@@ -1,0 +1,30 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file into the body of the default.hbs template --}}
+
+<main class="gh-main gh-outer">
+    <section class="gh-archive{{#if @custom.show_publication_info_sidebar}} has-sidebar{{/if}} gh-inner">
+            <article class="gh-article">
+                <header class="gh-article-header gh-canvas">
+                    <h1 class="gh-article-title is-title">Our People</h1>
+                </header>
+
+                <section class="gh-content gh-canvas is-body">
+                    <div class="gh-container is-staff">
+                        {{#get "authors"}}
+                            {{! Loop through authors }}
+                            {{#foreach authors}}
+                                <table class="gh-card-wrapper is-staff">
+                                    <tbody>
+                                        <tr><td style="border: none"><img src="{{profile_image}}" width="300" height="300"></td></tr>
+                                        <tr><td style="border: none"><h2>{{name}}</h3></td></tr>
+                                        <tr><td style="min-width: 300px"><p>{{bio}}</p></td></tr>
+                                    </tbody>
+                                </table>
+                            {{/foreach}}
+                        {{/get}}
+                    </div>
+                </section>
+            </article>
+    </section>
+
+</main>
