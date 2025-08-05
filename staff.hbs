@@ -8,7 +8,7 @@
                     <h1 class="gh-article-title is-title">Our People</h1>
                 </header>
 
-                <section class="gh-content gh-canvas is-body">
+                <section class="gh-canvas is-body">
                     <div class="gh-container is-staff">
                         {{#get "authors"}}
                             {{! Loop through authors }}
@@ -16,7 +16,7 @@
                                 <table class="gh-card-wrapper is-staff">
                                     <tbody>
                                         <tr><td style="border: none"><img src="{{profile_image}}" width="300" height="300"></td></tr>
-                                        <tr><td style="border: none"><h2>{{name}}</h3></td></tr>
+                                        <tr><td style="border: none"><h2><a href="{{url}}">{{name}}</a></h3></td></tr>
                                         <tr><td style="min-width: 300px"><p>{{bio}}</p></td></tr>
                                     </tbody>
                                 </table>
