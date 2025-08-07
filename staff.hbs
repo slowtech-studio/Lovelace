@@ -13,16 +13,16 @@
                     {{#foreach authors}}
                         <table class="gh-card-wrapper is-staff">
                             <tbody>
-                                <tr>
-                                    <td style="border: none"><a href="{{url}}"><img src="{{profile_image}}" width="300" height="300"></a></td>
+                                <tr class="bio is-staff">
+                                    <td><a href="{{url}}"><img src="{{profile_image}}"></a></td>
                                 </tr>
-                                <tr>
-                                    <td style="border: none">
+                                <tr class="name is-staff">
+                                    <td>
                                         <h2><a href="{{url}}">{{name}}</a></h3>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="min-width: 300px">
+                                    <td class="bio is-staff">
                                         <p>{{bio}}</p>
                                     </td>
                                 </tr>
