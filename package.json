@@ -2,7 +2,7 @@
     "name": "lovelace",
     "description": "The theme for slowtech.studio, forked from the official source theme",
     "demo": "https://slow-tech.ghost.io",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "engines": {
         "ghost": ">=5.0.0"
     },

@@ -4,23 +4,16 @@
     body {
         background-color: {{#is "tag"}}{{accent_color}}{{else}}{{primary_tag.accent_color}}{{/is}};
     }
-    {{#match accent_color "#000000"}}
-    .gh-article-meta-content, .gh-main, .gh-article-meta, .gh-card-link, .gh-container-inner, .gh-footer, .gh-content, a, time {
-        color: var(--color-white);
+    .gh-navigation {
+        color: var(--color-black);
     }
-    .gh-form-input {
-        background-color: var(--color-white);
-    }
-    {{/match}}
-
-    {{#match primary_tag.accent_color "#000000"}}
-    .gh-article-meta-content, .gh-main, .gh-article-meta, .gh-card-link, .gh-container-inner, .gh-footer, .gh-content, a, time {
-        color: var(--color-white);
-    }
-    .gh-form-input {
-        background-color: var(--color-white);
-    }
-    {{/match}}
-
     </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.getComputedStyle(document.body).backgroundColor === "rgb(0, 0, 0)") {
+                document.documentElement.classList.replace('has-dark-text', 'has-light-text');
+            }
+        });
+    </script>
 {{/if}}
